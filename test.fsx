@@ -1,13 +1,16 @@
 
 #r "packages/FsUnit/lib/net45/FsUnit.NUnit.dll"
-#r "packages/NUnit/lib/net45/nunit.framework.dll"
+#I "packages/FsUnit/lib/net45"
 
-#I "packages/FsUnit/lib/net45/"
-#I "packages/NUnit/lib/dotnet/"
+#r "packages/NUnit/lib/dotnet/nunit.framework.dll"
+#I "packages/NUnit/lib/dotnet"
 
 open FsUnit
 open NUnit.Framework
 
-1 + 1 |> should equal 0
+1 + 1 |> should equal  4 |> printfn "%A"
+2 + 2 |> should equal  4 |> printfn "%A"
+2 + 2 |> should equal  4 |> printfn "%A"
+
 
 

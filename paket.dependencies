@@ -2,3 +2,5 @@ source https://www.nuget.org/api/v2
 
 nuget Fake
 nuget FsUnit
+nuget FsUnit.xUnit
+nuget Unquote 

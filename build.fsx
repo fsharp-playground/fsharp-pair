@@ -6,17 +6,15 @@ open Fake.ProcessHelper
 open System.Diagnostics
 
 let run (src: string) =
+    printfn "fsharpi %s" src
     Shell.Exec ("fsharpi", src) |> ignore
-    ()
 
 let go change = 
     printfn "%A" change
     run change.Name
-    ()
-    
 
 Target "watch" (fun _ ->
-    use watcher = !! "*.fsx" |> WatchChanges (fun changes ->
+    use watcher = !! "test*.fsx" |> WatchChanges (fun changes ->
             tracefn  "%A" changes
             go (changes |> Seq.head)
     )
