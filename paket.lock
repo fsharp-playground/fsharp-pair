@@ -3,6 +3,8 @@ NUGET
   specs:
     FAKE (4.23)
     FSharp.Core (4.0.0.1)
+    FSharp.Data (2.2.5)
+      Zlib.Portable (>= 1.10) - framework: portable-net40+sl50+wp80+win80
     FsUnit (2.1)
       FSharp.Core (>= 3.1.2.5)
       NUnit (3.2)
@@ -174,3 +176,4 @@ NUGET
       System.Threading.Tasks (>= 4.0) - framework: dnxcore50
       xunit.abstractions (>= 2.0) - framework: dnxcore50
       xunit.extensibility.core (2.1) - framework: >= net45, dnx451, dnxcore50, monoandroid, monotouch, xamarinios, winv4.5, wpv8.0, wpav8.1
+    Zlib.Portable (1.11) - framework: portable-net40+sl50+wp80+win80

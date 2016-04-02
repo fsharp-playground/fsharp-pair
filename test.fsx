@@ -8,9 +8,9 @@
 open FsUnit
 open NUnit.Framework
 
-1 + 1 |> should equal  4 |> printfn "%A"
-2 + 2 |> should equal  4 |> printfn "%A"
-2 + 2 |> should equal  4 |> printfn "%A"
+1 + 1 |> should equal  4
+1 + 1 |> should equal  4
+1 + 1 |> should equal  4
 
 
 

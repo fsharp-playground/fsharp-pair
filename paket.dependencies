@@ -4,3 +4,4 @@ nuget Fake
 nuget FsUnit
 nuget FsUnit.xUnit
 nuget Unquote 
+nuget FSharp.Data
